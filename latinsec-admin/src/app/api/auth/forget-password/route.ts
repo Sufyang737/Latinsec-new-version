@@ -43,7 +43,7 @@ export async function POST(request: NextRequest) {
             from: 'onboarding@resend.dev',
             to: 'syedsufyanahmed1@gmail.com',
             subject: 'Cambio de contraseña panel ADMIN LATINSEC',
-            html: `<a hrft=${forgetUrl}>Cambio de contraseña</a>`,
+            html: `<a href=${forgetUrl}>Cambio de contraseña</a>`,
         })
 
         return NextResponse.json(
