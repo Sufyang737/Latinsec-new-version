@@ -14,6 +14,7 @@ export const messages = {
         userCreated: "Usuario credo.",
         userlogged: "Bienvenido nuevamente",
         emailSent: "Se ha enviado con exito el cambio de contraseña",
-        passwordChanged: "Se ha cambiado la contraseña con exito"
+        passwordChanged: "Se ha cambiado la contraseña con exito",
+        authorized: "Autorizado"
     }
 }
