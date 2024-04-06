@@ -1,0 +1,11 @@
+
+export default function HomePage() {
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <h1>HomePage</h1>
+    </main>
+  );
+}
+
+
+Crear funciones para suma, resta, multiplicacion y divicion  ejecutarlas
