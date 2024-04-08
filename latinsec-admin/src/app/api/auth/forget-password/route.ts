@@ -4,6 +4,7 @@ import { messages } from "@/utils/messages";
 import { NextRequest, NextResponse } from "next/server";
 import jwt from "jsonwebtoken";
 import { Resend } from "resend"
+import { EmailTemplate } from "@/components/EmailTemplate";
 
 const resend = new Resend("re_Uq8WPrfn_KgNaK3mgt71YS7CjTaWnpCFh")
 
@@ -43,7 +44,7 @@ export async function POST(request: NextRequest) {
             from: 'onboarding@resend.dev',
             to: 'syedsufyanahmed1@gmail.com',
             subject: 'Cambio de contraseña panel ADMIN LATINSEC',
-            html: `<a href=${forgetUrl}>Cambio de contraseña</a>`,
+            react: EmailTemplate({ buttonUrl: forgetUrl })
         })
 
         return NextResponse.json(

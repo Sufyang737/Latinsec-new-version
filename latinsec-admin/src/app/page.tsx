@@ -1,8 +1,23 @@
-"use client"
+'use client'
 
-import { Form } from "@/components/Form";
+import { Form } from '@/components/Form'
+import { useAuthFetch } from '@/hooks/useAuthFetch'
+import { useLoading } from '@/hooks/useLoading'
 
 export default function LoginPage() {
+  const { finishLoading, isLoading, startLoading } = useLoading()
+  const authFetch = useAuthFetch()
+
+  const login = async (formData: any) => {
+    startLoading()
+    await authFetch({
+      endpoint: 'login',
+      redirectRoute: '/home',
+      formData
+    })
+    finishLoading()
+  }
+
   return (
     <>
       <Form
@@ -22,7 +37,7 @@ export default function LoginPage() {
             type='password'
           />
         </div>
-        <Form.SubmitButton buttonText='Iniciar Sesión' /*isLoading={isLoading}*/ />
+        <Form.SubmitButton buttonText='Iniciar Sesión' isLoading={isLoading} />
         <Form.Footer
           description='Te olvidate tu contraseña?'
           link='/forget-password'
