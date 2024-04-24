@@ -29,8 +29,8 @@ const Home = () => {
           </a>
         </div>
       </section>
-      <section className="bg-[#0263A5] xl:h-24 h-52 relative flex justify-center mt-10">
-        <div className="bg-white max-w-[768px] p-4 grid xl:grid-cols-3 grid-cols-1 gap-3 absolute -top-10">
+      <section className="bg-[#0263A5] xl:h-24 lg:h-52 md:h-60 h-72 relative flex justify-center mt-10">
+        <div className="bg-white max-w-[768px] p-4 grid xl:grid-cols-3 grid-cols-1 md:gap-6 gap-10 absolute -top-10">
           <div className="flex items-center gap-2">
             <span>
               <ClarityUsersIcon className="text-[45px]" />
@@ -171,9 +171,9 @@ const Home = () => {
                 className="aspect-video"
               ></iframe>
             </div>
-            <div className="w-[336px] grid place-content-center">
+            <div className="lg:w-[336px] grid place-content-center">
               <div>
-                <h3 className="font-bold text-[40px] text-[#252B42]">
+                <h3 className="font-bold text-[40px] lg:text-start text-center mb-5 mt-10 lg:mt-0 text-[#252B42]">
                   Líderes en el mercado
                 </h3>
                 <p className="text-[#737373] font-medium">
