@@ -19,8 +19,8 @@ export const Navbar = () => {
         </div>
         <MenuHamburger handleOpenMenu={handleOpenMenu} />
         <ul className="sm:flex hidden items-center gap-10 uppercase text-sm font-medium text-white">
-          <li className="bg-[#E9282D] py-2 px-3 rounded-[4px]">
-            <a href="/">Inicio</a>
+          <li>
+            <a href="/" className='py-2 px-3 rounded-[4px] bg-[#E9282D] '>Inicio</a>
           </li>
           <li className="py-2 px-3 relative group">
             <button className="flex gap-1 items-center uppercase">
@@ -75,8 +75,8 @@ export const Navbar = () => {
           <li className="py-2 px-3">
             <a href="/latinsec">Latinsec</a>
           </li>
-          <li className="font-extrabold bg-[#0063A5] rounded-[10px] py-2 px-3">
-            <a href="/contacto">Contacto</a>
+          <li>
+            <a href="/contacto"  className="font-extrabold bg-[#0063A5] rounded-[10px] py-2 px-3">Contacto</a>
           </li>
         </ul>
       </nav>
