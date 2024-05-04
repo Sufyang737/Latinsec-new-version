@@ -9,7 +9,7 @@ import {
 } from '../assets/icons';
 import SwiperCompanies from '../components/SwiperCompanies';
 import SwiperComponent from '../components/SwiperComponent';
-import Map from '../assets/images/map.png';
+// import Map from '../assets/images/map.png';
 import { FormContact } from '../components/FormContact';
 import CountUp from 'react-countup';
 import { Reveal } from '../components/animation/Reveal';
@@ -237,7 +237,7 @@ const Home = () => {
           <SwiperComponent />
         </div>
       </section>
-      <section className="bg-[#FAFAFA] py-16 px-5">
+      {/* <section className="bg-[#FAFAFA] py-16 px-5">
         <div className="text-center">
           <h3 className="text-[#252B42] font-bold text-[32px]">
             Compañías con la que trabaja{' '}
@@ -248,27 +248,27 @@ const Home = () => {
         <div className="mt-10">
           <SwiperCompanies />
         </div>
-      </section>
+      </section> */}
       <section className="bg-[#252B42] pt-16 pb-96 text-white px-5">
-        <div className="max-w-5xl mx-auto lg:flex items-center justify-between">
+        <div className="max-w-5xl mx-auto lg:flex items-center gap-5">
           <Reveal hiddenValue={{ opacity: 0, x: -75 }}>
-            <div className="lg:w-1/2">
-              <h3 className="font-bold text-[40px]">
-                We Have Branches All Over The World
-              </h3>
-              <p className="font-medium text-sm text-[#D5D5D5] line-clamp-4">
-                Lorem ipsum dolor sit amet consectetur. Quis porta habitasse
-                eget id neque id blandit dolor in. Pellentesque leo penatibus
-                orci egestas mauris nam nunc donec ac. Elementum feugiat eget
-                egestas.
+            <div>
+              <h3 className="font-bold text-[40px]">Cobertura Territorial</h3>
+              <p className="font-medium text-sm text-[#D5D5D5] line-clamp-7">
+                <span className="text-[#0263A5]">Latin</span>
+                <span className="text-[#FF0000]">Sec</span> con habilitaciones
+                para operar tanto en la Ciudad de Buenos Aires como en todo el
+                ámbito de la Provincia, en jurisdicción de la Prefectura Naval
+                Argentina y poseemos habilitaciones para el uso de armas de
+                ANMaC. Además estamos adheridos a la Cámara Argentina de
+                Empresas de Seguridad e Investigación (CAESI). Para custodia de
+                mercadería en tránsito en todo el territorio nacional.
               </p>
             </div>
           </Reveal>
-          <Reveal hiddenValue={{ opacity: 0, x: 75 }}>
-            <div className="flex justify-center ">
-              <img src={Map} alt="" />
-            </div>
-          </Reveal>
+          <div className="lg:w-[600px] mt-16 lg:mt-0">
+            <SwiperCompanies />
+          </div>
         </div>
       </section>
       <section className="bg-[#FAFAFA] h-96 px-5">

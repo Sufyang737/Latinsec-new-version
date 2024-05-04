@@ -19,11 +19,11 @@ export default function SwiperCompanies() {
         }}
         breakpoints={{
           0: {
-            slidesPerView: 2,
+            slidesPerView: 4,
             spaceBetween: 10,
           },
           768: {
-            slidesPerView: 3,
+            slidesPerView: 4,
             spaceBetween: 20,
           },
           1024: {
