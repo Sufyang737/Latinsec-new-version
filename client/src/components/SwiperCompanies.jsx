@@ -36,11 +36,11 @@ export default function SwiperCompanies() {
           },
         }}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+        className=""
       >
         {[...DataCompanies, ...DataCompanies].map(({ logo }, i) => (
-          <SwiperSlide key={i}>
-            <div className="flex items-center">
+          <SwiperSlide key={i} className='h-36 flex items-center'>
+            <div>
               <img src={logo} alt="" />
             </div>
           </SwiperSlide>
