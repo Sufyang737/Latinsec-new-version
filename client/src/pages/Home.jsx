@@ -14,6 +14,8 @@ import { FormContact } from '../components/FormContact';
 import CountUp from 'react-countup';
 import { Reveal } from '../components/animation/Reveal';
 import { Typewriter } from 'react-simple-typewriter';
+import { DataCompanies } from '../data/dataCompanies';
+import { DataTerritory } from '../data/dataTerritory';
 
 const Home = () => {
   return (
@@ -237,7 +239,7 @@ const Home = () => {
           <SwiperComponent />
         </div>
       </section>
-      {/* <section className="bg-[#FAFAFA] py-16 px-5">
+      <section className="bg-[#FAFAFA] py-16 px-5">
         <div className="text-center">
           <h3 className="text-[#252B42] font-bold text-[32px]">
             Compañías con la que trabaja{' '}
@@ -246,9 +248,9 @@ const Home = () => {
           </h3>
         </div>
         <div className="mt-10">
-          <SwiperCompanies />
+          <SwiperCompanies data={DataCompanies} />
         </div>
-      </section> */}
+      </section>
       <section className="bg-[#252B42] pt-16 pb-96 text-white px-5">
         <div className="max-w-5xl mx-auto lg:flex items-center gap-5">
           <Reveal hiddenValue={{ opacity: 0, x: -75 }}>
@@ -267,7 +269,7 @@ const Home = () => {
             </div>
           </Reveal>
           <div className="lg:w-[600px] mt-16 lg:mt-0">
-            <SwiperCompanies />
+            <SwiperCompanies  data={DataTerritory} />
           </div>
         </div>
       </section>
