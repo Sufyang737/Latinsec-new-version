@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ContactImage from '../assets/images/contact-image.jpg';
+import ContactImage from '../assets/images/contact-image.webp';
 import { Input } from './ui/Input';
 // import axios from 'axios';
 import { TextArea } from './ui/TextArea';
