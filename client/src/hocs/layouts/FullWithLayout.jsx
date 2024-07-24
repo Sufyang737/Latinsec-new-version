@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import { Navbar } from '../../components/Navbar';
 import { Footer } from '../../components/Footer';
-import BgPrimary from '../../assets/images/bg-primary.jpg';
+import BgPrimary from '../../assets/images/bg-primary.webp';
 
 export const FullWithLayout = () => {
   return (

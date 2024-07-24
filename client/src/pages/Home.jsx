@@ -16,6 +16,7 @@ import { Reveal } from '../components/animation/Reveal';
 import { Typewriter } from 'react-simple-typewriter';
 import { DataCompanies } from '../data/dataCompanies';
 import { DataTerritory } from '../data/dataTerritory';
+import SwiperAbout from '../components/SwiperAbout';
 
 const Home = () => {
   return (
@@ -200,18 +201,11 @@ const Home = () => {
           </Reveal>
           <div className="lg:flex py-16 items-center px-5 justify-between">
             <div className="lg:w-[597px]">
-              <iframe
-                width="100%"
-                src="https://www.youtube.com/embed/eeFbKDrLOUw"
-                title="Youtube video"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                className="aspect-video"
-              ></iframe>
+              <SwiperAbout />
             </div>
             <div className="lg:w-[336px] grid place-content-center">
               <div>
-                <h3 className="font-bold text-[40px] lg:text-start text-center mb-5 mt-10 lg:mt-0 text-[#252B42]">
+                <h3 className="font-bold text-[40px] lg:text-start text-center mb-5 lg:mt-0 text-[#252B42]">
                   Líderes en el mercado
                 </h3>
                 <p className="text-[#737373] font-medium">
