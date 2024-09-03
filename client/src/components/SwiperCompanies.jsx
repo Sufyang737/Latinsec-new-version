@@ -1,11 +1,11 @@
+/* eslint-disable react/prop-types */
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import { DataCompanies } from '../data/dataCompanies';
 
-export default function SwiperCompanies() {
+export default function SwiperCompanies({data}) {
   return (
     <>
       <Swiper
@@ -36,11 +36,11 @@ export default function SwiperCompanies() {
           },
         }}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+        className=""
       >
-        {[...DataCompanies, ...DataCompanies].map(({ logo }, i) => (
-          <SwiperSlide key={i}>
-            <div className="flex items-center">
+        {[...data, ...data].map(({ logo }, i) => (
+          <SwiperSlide key={i} className='h-36 flex items-center'>
+            <div>
               <img src={logo} alt="" />
             </div>
           </SwiperSlide>

@@ -1,17 +1,21 @@
+import farmaciadrahorro from '../assets/logos/farmaciadrahorro.png';
+import logo4 from '../assets/logos/logo4.png';
 import Logo1 from '../assets/logos/logo1.png';
-import Logo2 from '../assets/logos/logo2.png';
-import Logo3 from '../assets/logos/logo3.png';
-import Logo4 from '../assets/logos/logo4.png';
-import Logo5 from '../assets/logos/logo5.png';
-import Logo6 from '../assets/logos/logo6.png';
+import logo5 from '../assets/logos/logo5.png';
+import logo6 from '../assets/logos/logo6.png';
+import logoassitcargo from '../assets/logos/logoassitcargo.jpeg';
+import logomech from '../assets/logos/logomech.png';
+import logosica from '../assets/logos/logosica.png';
+import olmologo from '../assets/logos/olmologo.png';
 
 export const DataCompanies = [
+  { logo: farmaciadrahorro },
+  { logo: logo4 },
   { logo: Logo1 },
-  { logo: Logo2 },
-  { logo: Logo3 },
-  { logo: Logo4 },
-  { logo: Logo5 },
-  { logo: Logo6 },
-  { logo: Logo1 },
-  { logo: Logo4 },
+  { logo: logo5 },
+  { logo: logo6 },
+  { logo: logoassitcargo },
+  { logo: logomech },
+  { logo: logosica },
+  { logo: olmologo },
 ];
