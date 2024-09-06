@@ -56,7 +56,7 @@ const Home = () => {
             </span>
             <div>
               <span className="font-bold text-[24px] text-[#252B42]">
-                +<CountUp end={1000} duration={5} />
+                +<CountUp end={500} duration={5} />
               </span>
               <p className="font-semibold text-sm text-[#737373]">Empleados</p>
             </div>
@@ -67,7 +67,7 @@ const Home = () => {
             </span>
             <div>
               <span className="font-bold text-[24px] text-[#252B42]">
-                +<CountUp end={5000} duration={5} />
+                +<CountUp end={1000} duration={5} />
               </span>
               <p className="font-semibold text-sm text-[#737373]">
                 Clientes felíces
@@ -80,7 +80,7 @@ const Home = () => {
             </span>
             <div>
               <span className="font-bold text-[24px] text-[#252B42]">
-                +<CountUp end={25} duration={5} />
+                +<CountUp end={26} duration={5} />
               </span>
               <p className="font-semibold text-sm text-[#737373]">
                 Años en el mercado
