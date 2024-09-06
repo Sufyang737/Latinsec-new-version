@@ -37,7 +37,7 @@ const Home = () => {
             es nuestra especialidad
           </h1>
           <p className="font-medium xl:text-xl lg:text-lg text-md max-w-sm">
-            Somos una empresa de vigilancia que cuenta con mas de 25 años de
+            Somos una empresa de vigilancia que cuenta con mas de 26 años de
             experiencia
           </p>
           <a
